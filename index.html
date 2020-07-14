@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div class="main">
+        <div class="container-fluid heading">
+            Stop Watch
+        </div>
+        <div class="container-fluid">
+            <div class="row rowusing">
+
+                <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-3">
+                    <h3>Hrs</h3>
+                </div>
+
+                <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-3">
+                    <h3>Min</h3>
+                </div>
+
+                <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-3">
+                    <h3>Sec</h3>
+                </div>
+
+                <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-3">
+                    <h3>Mili Sec</h3>
+                </div>
+            </div>
+
+
+            <div class="row row2">
+
+                <div class="col-xl-3 col-lg-3 col-md-3 col-3">
+                    <span id="hrs">00</span>
+                </div>
+
+                <div class="col-xl-3 col-lg-3 col-md-3 col-3">
+                    <span id="min">00</span>
+                </div>
+
+                <div class="col-xl-3 col-lg-3 col-md-3 col-3">
+                    <span id="sec">00</span>
+                </div>
+
+                <div class="col-xl-3 col-lg-3 col-md-3 col-3">
+                    <span id="msec">00</span>
+                </div>
+
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-4">
+                        <button id="start" class="btn" onclick="start()">START</button>
+                    </div>
+
+                    <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-4">
+                        <button id="stop" class="btn" onclick="stop('continue..')">PAUSE</button>
+                    </div>
+
+                    <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-4">
+                        <button id="reset" disabled class="btn" onclick="reset()">RESET</button>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
