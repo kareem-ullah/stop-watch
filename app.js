@@ -68,6 +68,7 @@ function reset() {
     sec = '00';
     msec = '00';
     hrsheading.innerHTML = hrs;
+    
     minheading.innerHTML = min;
     secheading.innerHTML = sec;
     msecheading.innerHTML = msec;
